@@ -667,7 +667,7 @@ static NSString *const timedMetadata = @"timedMetadata";
                 self.onVideoFullscreenPlayerWillPresent(@{@"target": self.reactTag});
             }
             [viewController presentViewController:_playerViewController animated:true completion:^{
-                _playerViewController.showsPlaybackControls = YES;
+                _playerViewController.showsPlaybackControls = NO;
                 _fullscreenPlayerPresented = fullscreen;
                 if(self.onVideoFullscreenPlayerDidPresent) {
                     self.onVideoFullscreenPlayerDidPresent(@{@"target": self.reactTag});
